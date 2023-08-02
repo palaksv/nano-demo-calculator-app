@@ -20,7 +20,7 @@ baseRouter.post('/add', (req, res) => {
     var firstNumber=data.first;
     var secondNumber=data.second;
     var result=firstNumber+secondNumber;
-    res.status(200).send({result: `${result}`})
+    res.status(200).send({result: result})
 });
 
 
@@ -31,7 +31,7 @@ baseRouter.post('/subtract', (req, res) => {
     var firstNumber=data.first;
     var secondNumber=data.second;
     var result=firstNumber-secondNumber;
-    res.status(200).send({result: `${result}`})
+    res.status(200).send({result: result})
 });
 
 app.use(baseUrl, baseRouter);
